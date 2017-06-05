@@ -12,6 +12,7 @@ namespace Lab2
         {
             Series series = new Series();
 
+           
             menu();
             Console.WriteLine("Выберите пункт меню: ");
             int c = Convert.ToInt32(Console.ReadLine());

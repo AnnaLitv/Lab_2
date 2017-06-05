@@ -37,6 +37,11 @@ namespace Lab2
         {
             return false;
         }
+
+        public override int GetHashCode()
+        {
+            return 0;
+        }
        
     }
 }

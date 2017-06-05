@@ -29,13 +29,16 @@ namespace Lab2
         {
                 for (int i = 0; i < functions.Count; i++)
                 {
-                if (functions[i].Equals(el) == true)
-                {
+                    if (functions[i].Equals(el) == true)
+                        {
+                    Console.WriteLine(functions[i].GetHashCode() + " код равен " + el.GetHashCode());
                     return true;
-                }
-                    
+                        }                 
                 }
                 return false;
         }
+
+        
+        
     }
 }

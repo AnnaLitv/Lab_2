@@ -128,7 +128,7 @@ namespace Lab2
 
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return a.GetHashCode() ^ b.GetHashCode()^c.GetHashCode();
         }
 
 
