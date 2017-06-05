@@ -48,5 +48,19 @@ namespace Lab2
             return null;
         }
 
+        public virtual string minus(double x)
+        {
+            return null;
+        }
+
+        public virtual string mult(double x)
+        {
+            return null;
+        }
+
+        public virtual string div(double x)
+        {
+            return null;
+        }
     }
 }

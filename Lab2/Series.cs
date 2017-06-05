@@ -58,7 +58,30 @@ namespace Lab2
                 Console.WriteLine(functions[i].ToString() + " + "+x+" = "+functions[i].sum(x));
             }
         }
-        
-        
+
+        public void minus(double x)
+        {
+            for (int i = 0; i < functions.Count; i++)
+            {
+                Console.WriteLine(functions[i].ToString() + " + " + x + " = " + functions[i].minus(x));
+            }
+        }
+
+        public void mult(double x)
+        {
+            for (int i = 0; i < functions.Count; i++)
+            {
+                Console.WriteLine(functions[i].ToString() + " + " + x + " = " + functions[i].mult(x));
+            }
+        }
+
+        public void div(double x)
+        {
+            for (int i = 0; i < functions.Count; i++)
+            {
+                Console.WriteLine(functions[i].ToString() + " + " + x + " = " + functions[i].div(x));
+            }
+        }
+
     }
 }

@@ -142,5 +142,29 @@ namespace Lab2
             return "Ellipse: a= " + hip.a + ", b= " + hip.b;
         }
 
+        public override string minus(double x)
+        {
+            Ellipse hi = new Ellipse(this.a, this.b);
+            Ellipse hip = new Ellipse();
+            hip = hi - x;
+            return "Ellipse: a= " + hip.a + ", b= " + hip.b;
+        }
+
+        public override string mult(double x)
+        {
+            Ellipse hi = new Ellipse(this.a, this.b);
+            Ellipse hip = new Ellipse();
+            hip = hi * x;
+            return "Ellipse: a= " + hip.a + ", b= " + hip.b;
+        }
+
+        public override string div(double x)
+        {
+            Ellipse hi = new Ellipse(this.a, this.b);
+            Ellipse hip = new Ellipse();
+            hip = hi / x;
+            return "Ellipse: a= " + hip.a + ", b= " + hip.b;
+        }
+
     }
 }

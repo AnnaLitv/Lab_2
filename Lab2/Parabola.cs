@@ -141,5 +141,28 @@ namespace Lab2
             return "Parabola: a= " + hip.a + ", b= " + hip.b + ", c= " + hip.c;
         }
 
+        public override string minus(double x)
+        {
+            Parabola hi = new Parabola(this.a, this.b, this.c);
+            Parabola hip = new Parabola();
+            hip = hi - x;
+            return "Parabola: a= " + hip.a + ", b= " + hip.b + ", c= " + hip.c;
+        }
+
+        public override string mult(double x)
+        {
+            Parabola hi = new Parabola(this.a, this.b, this.c);
+            Parabola hip = new Parabola();
+            hip = hi * x;
+            return "Parabola: a= " + hip.a + ", b= " + hip.b + ", c= " + hip.c;
+        }
+
+        public override string div(double x)
+        {
+            Parabola hi = new Parabola(this.a, this.b, this.c);
+            Parabola hip = new Parabola();
+            hip = hi / x;
+            return "Parabola: a= " + hip.a + ", b= " + hip.b + ", c= " + hip.c;
+        }
     }
 }

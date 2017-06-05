@@ -138,7 +138,28 @@ namespace Lab2
             return "Hiperbola: a= "+hip.a+", b= "+hip.b;
         }
 
+        public override string minus(double x)
+        {
+            Hiperbola hi = new Hiperbola(this.a, this.b);
+            Hiperbola hip = new Hiperbola();
+            hip = hi - x;
+            return "Hiperbola: a= " + hip.a + ", b= " + hip.b;
+        }
 
+        public override string mult(double x)
+        {
+            Hiperbola hi = new Hiperbola(this.a, this.b);
+            Hiperbola hip = new Hiperbola();
+            hip = hi * x;
+            return "Hiperbola: a= " + hip.a + ", b= " + hip.b;
+        }
 
+        public override string div(double x)
+        {
+            Hiperbola hi = new Hiperbola(this.a, this.b);
+            Hiperbola hip = new Hiperbola();
+            hip = hi / x;
+            return "Hiperbola: a= " + hip.a + ", b= " + hip.b;
+        }
     }
 }

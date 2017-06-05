@@ -129,18 +129,21 @@ namespace Lab2
                         {
                             Console.WriteLine("Введите число: ");
                             double w = Convert.ToDouble(Console.ReadLine());
+                            series.minus(w);
                             break;
                         }
                     case 7:
                         {
                             Console.WriteLine("Введите число:");
                             double r = Convert.ToDouble(Console.ReadLine());
+                            series.mult(r);
                             break;
                         }
                     case 8:
                         {
                             Console.WriteLine("Введите число:");
                             double t = Convert.ToDouble(Console.ReadLine());
+                            series.div(t);
                             break;
                         }
                     case 9:
