@@ -10,7 +10,7 @@ namespace Lab2
     {
         static void Main(string[] args)
         {
-            Series series = new Series();  
+            Series series = new Series();
 
             menu();
             Console.WriteLine("Выберите пункт меню: ");
@@ -42,7 +42,7 @@ namespace Lab2
                                     double a = Convert.ToDouble(Console.ReadLine());
                                     Console.WriteLine("Введите b:");
                                     double b = Convert.ToDouble(Console.ReadLine());
-                                    Ellipse el = new Ellipse(a,b);
+                                    Ellipse el = new Ellipse(a, b);
                                     series.add(el);
                                     break;
                                 case 2://Гипербола
@@ -75,7 +75,39 @@ namespace Lab2
                         }
                     case 4:
                         {
-                           
+                            Console.WriteLine("1. Эллипс");
+                            Console.WriteLine("2. Гипербола");
+                            Console.WriteLine("3. Парабола");
+                            int d = Convert.ToInt32(Console.ReadLine());
+                            switch (d)
+                            {
+                                case 1://Эллипс
+                                    Console.WriteLine("Введите a:");
+                                    double a = Convert.ToDouble(Console.ReadLine());
+                                    Console.WriteLine("Введите b:");
+                                    double b = Convert.ToDouble(Console.ReadLine());
+                                    Ellipse el = new Ellipse(a, b);
+
+                                    break;
+                                case 2://Гипербола
+                                    Console.WriteLine("Введите a:");
+                                    double a1 = Convert.ToDouble(Console.ReadLine());
+                                    Console.WriteLine("Введите b:");
+                                    double b1 = Convert.ToDouble(Console.ReadLine());
+                                    Hiperbola hiper = new Hiperbola(a1, b1);
+
+                                    break;
+                                case 3://Парабола
+                                    Console.WriteLine("Введите a:");
+                                    double a2 = Convert.ToDouble(Console.ReadLine());
+                                    Console.WriteLine("Введите b:");
+                                    double b2 = Convert.ToDouble(Console.ReadLine());
+                                    Console.WriteLine("Введите c:");
+                                    double c2 = Convert.ToDouble(Console.ReadLine());
+                                    Parabola parab = new Parabola(a2, b2, c2);
+
+                                    break;
+                            }
                             break;
                         }
                     default:
@@ -96,7 +128,7 @@ namespace Lab2
             Console.WriteLine("1. Задать уравнения стандартно");
             Console.WriteLine("2. Задать уравнение");
             Console.WriteLine("3. Посчитать значение в точке х");
-            Console.WriteLine("4. Вывести уравнение");
+            Console.WriteLine("4. Проверить наличие уравнения");
             Console.WriteLine("5. Выйти");
         }
     }

@@ -12,21 +12,30 @@ namespace Lab2
         {
 
         }
+
         public virtual void print()
         {
 
         }
+
         public virtual void setVlast(double a, double b, double c)
         {
 
         }
+
         public virtual void setX(double x)
         {
 
         }
+
         public virtual string res()
         {
             return null;
+        }
+
+        public virtual int getKey(int key)
+        {
+            return key;
         }
     }
 }
