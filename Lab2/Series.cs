@@ -15,7 +15,7 @@ namespace Lab2
 
         public void add(Function el)
         {
-            if (el == null) return;
+            if (el == null) throw new MyException();
             functions.Add(el);
         }
 
