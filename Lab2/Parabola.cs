@@ -69,6 +69,30 @@ namespace Lab2
             return "y=" + y;
         }
 
+        public static Parabola operator +(Parabola first, double sec)
+        {
+            Parabola res = new Parabola(first.a + sec, first.b + sec, first.c + sec);
+            return res;
+        }
+
+        public static Parabola operator -(Parabola first, double sec)
+        {
+            Parabola res = new Parabola(first.a - sec, first.b - sec, first.c - sec);
+            return res;
+        }
+
+        public static Parabola operator *(Parabola first, double sec)
+        {
+            Parabola res = new Parabola(first.a * sec, first.b * sec, first.c * sec);
+            return res;
+        }
+
+        public static Parabola operator /(Parabola first, double sec)
+        {
+            Parabola res = new Parabola(first.a / sec, first.b / sec, first.c / sec);
+            return res;
+        }
+
         public static bool operator ==(Parabola first, Parabola sec)
         {
             if (first.a == sec.a && first.b == sec.b && first.c==sec.c)

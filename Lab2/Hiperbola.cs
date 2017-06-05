@@ -69,6 +69,30 @@ namespace Lab2
             return "y1=" + y[0] + ", y2=" + y[1];
         }
 
+        public static Hiperbola operator +(Hiperbola first, double sec)
+        {
+            Hiperbola res = new Hiperbola(first.a + sec, first.b + sec);
+            return res;
+        }
+
+        public static Hiperbola operator -(Hiperbola first, double sec)
+        {
+            Hiperbola res = new Hiperbola(first.a - sec, first.b - sec);
+            return res;
+        }
+
+        public static Hiperbola operator *(Hiperbola first, double sec)
+        {
+            Hiperbola res = new Hiperbola(first.a * sec, first.b * sec);
+            return res;
+        }
+
+        public static Hiperbola operator /(Hiperbola first, double sec)
+        {
+            Hiperbola res = new Hiperbola(first.a / sec, first.b / sec);
+            return res;
+        }
+
         public static bool operator == (Hiperbola first, Hiperbola sec)
         {
             if (first.a==sec.a && first.b==sec.b)

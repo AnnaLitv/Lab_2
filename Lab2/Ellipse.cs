@@ -84,6 +84,30 @@ namespace Lab2
 
         }
 
+        public static Ellipse operator +(Ellipse first, double sec)
+        {
+            Ellipse res = new Ellipse(first.a+sec,first.b+sec);
+            return res;
+        }
+
+        public static Ellipse operator -(Ellipse first, double sec)
+        {
+            Ellipse res = new Ellipse(first.a - sec, first.b - sec);
+            return res;
+        }
+
+        public static Ellipse operator *(Ellipse first, double sec)
+        {
+            Ellipse res = new Ellipse(first.a * sec, first.b * sec);
+            return res;
+        }
+
+        public static Ellipse operator /(Ellipse first, double sec)
+        {
+            Ellipse res = new Ellipse(first.a / sec, first.b / sec);
+            return res;
+        }
+
         public static bool operator ==(Ellipse first, Ellipse sec)
         {
             if (first.a == sec.a && first.b == sec.b)
