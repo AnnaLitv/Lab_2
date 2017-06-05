@@ -89,6 +89,7 @@ namespace Lab2
 
         public static Hiperbola operator /(Hiperbola first, double sec)
         {
+            if (sec == 0) throw new DivZro("Вы хотите поделить на ноль!");
             Hiperbola res = new Hiperbola(first.a / sec, first.b / sec);
             return res;
         }

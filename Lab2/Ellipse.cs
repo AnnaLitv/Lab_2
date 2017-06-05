@@ -104,6 +104,7 @@ namespace Lab2
 
         public static Ellipse operator /(Ellipse first, double sec)
         {
+            if (sec == 0) throw new DivZro("Вы хотите поделить на ноль!");
             Ellipse res = new Ellipse(first.a / sec, first.b / sec);
             return res;
         }
