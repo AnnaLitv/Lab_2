@@ -87,7 +87,9 @@ namespace Lab2
                                     Console.WriteLine("Введите b:");
                                     double b = Convert.ToDouble(Console.ReadLine());
                                     Ellipse el = new Ellipse(a, b);
-
+                                    if(series.equal(el))
+                                    Console.WriteLine("Есть!");
+                                    else Console.WriteLine("Нет!");
                                     break;
                                 case 2://Гипербола
                                     Console.WriteLine("Введите a:");
@@ -95,7 +97,9 @@ namespace Lab2
                                     Console.WriteLine("Введите b:");
                                     double b1 = Convert.ToDouble(Console.ReadLine());
                                     Hiperbola hiper = new Hiperbola(a1, b1);
-
+                                    if(series.equal(hiper))
+                                    Console.WriteLine("Есть!");
+                                    else Console.WriteLine("Нет!");
                                     break;
                                 case 3://Парабола
                                     Console.WriteLine("Введите a:");
@@ -105,7 +109,9 @@ namespace Lab2
                                     Console.WriteLine("Введите c:");
                                     double c2 = Convert.ToDouble(Console.ReadLine());
                                     Parabola parab = new Parabola(a2, b2, c2);
-
+                                    if(series.equal(parab))
+                                    Console.WriteLine("Есть!");
+                                    else Console.WriteLine("Нет!");
                                     break;
                             }
                             break;

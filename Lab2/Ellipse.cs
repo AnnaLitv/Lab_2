@@ -11,7 +11,6 @@ namespace Lab2
         private double x;
         private double a;
         private double b;
-        private int key = 2;
         private double[] y = new double[2];
 
 
@@ -79,8 +78,10 @@ namespace Lab2
             {
                 return false;
             }
-            // Return true if the fields match:
-            return base.Equals(obj) && a == el.a && b == el.b;
+            if (this.a == el.a && this.b == el.b)
+                return true;
+            return false;
+
         }
 
         public bool Equals(Ellipse el)
@@ -94,9 +95,6 @@ namespace Lab2
             return base.GetHashCode();
         }
 
-        public override int getKey(int key)
-        {
-            return key;
-        }
+      
     }
 }

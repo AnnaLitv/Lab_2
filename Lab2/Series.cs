@@ -25,9 +25,17 @@ namespace Lab2
             }
         }
 
-        public bool equal()
+        public bool equal(Function el)
         {
-            return
+                for (int i = 0; i < functions.Count; i++)
+                {
+                if (functions[i].Equals(el) == true)
+                {
+                    return true;
+                }
+                    
+                }
+                return false;
         }
     }
 }

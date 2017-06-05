@@ -11,7 +11,6 @@ namespace Lab2
         private double x;
         private double a;
         private double b;
-        private int key = 1;
         private double[] y = new double[2];
 
         public Hiperbola() { }
@@ -70,6 +69,10 @@ namespace Lab2
             return "y1=" + y[0] + ", y2=" + y[1];
         }
 
+        /*public static Hiperbola operator ==()
+        {
+
+        }*/
         public override bool Equals(object obj)
         {
             Hiperbola el = obj as Hiperbola;
@@ -77,8 +80,9 @@ namespace Lab2
             {
                 return false;
             }
-            // Return true if the fields match:
-            return base.Equals(obj) && a == el.a && b == el.b;
+            if (this.a == el.a && this.b == el.b)
+                return true;
+            return false;
         }
 
         public bool Equals(Hiperbola el)
@@ -92,9 +96,5 @@ namespace Lab2
             return base.GetHashCode();
         }
 
-        public override int getKey(int key)
-        {
-            return key;
-        }
     }
 }

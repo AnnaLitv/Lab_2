@@ -33,9 +33,10 @@ namespace Lab2
             return null;
         }
 
-        public virtual int getKey(int key)
+        public virtual bool Equals()
         {
-            return key;
+            return false;
         }
+       
     }
 }

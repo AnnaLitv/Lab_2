@@ -13,7 +13,6 @@ namespace Lab2
         private double b;
         private double c;
         private double y;
-        private int key = 3;
 
         public Parabola() { }
 
@@ -77,8 +76,10 @@ namespace Lab2
             {
                 return false;
             }
-            // Return true if the fields match:
-            return base.Equals(obj) && a == el.a && b == el.b && c == el.c;
+            if (this.a == el.a && this.b == el.b && this.c == el.c)
+                return true;
+            return false;
+           
         }
 
         public bool Equals(Parabola el)
@@ -92,9 +93,6 @@ namespace Lab2
             return base.GetHashCode();
         }
 
-        public override int getKey(int key)
-        {
-            return key;
-        }
+
     }
 }
