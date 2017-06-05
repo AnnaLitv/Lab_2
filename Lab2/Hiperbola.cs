@@ -69,10 +69,20 @@ namespace Lab2
             return "y1=" + y[0] + ", y2=" + y[1];
         }
 
-        /*public static Hiperbola operator ==()
+        public static bool operator == (Hiperbola first, Hiperbola sec)
         {
+            if (first.a==sec.a && first.b==sec.b)
+                return true;
+            return false;
+        }
 
-        }*/
+        public static bool operator !=(Hiperbola first, Hiperbola second)
+        {
+            if (first.a != second.a || first.b != second.b)
+                return true;
+            return false;
+        }
+
         public override bool Equals(object obj)
         {
             Hiperbola el = obj as Hiperbola;

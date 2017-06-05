@@ -69,6 +69,20 @@ namespace Lab2
             return "y=" + y;
         }
 
+        public static bool operator ==(Parabola first, Parabola sec)
+        {
+            if (first.a == sec.a && first.b == sec.b && first.c==sec.c)
+                return true;
+            return false;
+        }
+
+        public static bool operator !=(Parabola first, Parabola second)
+        {
+            if (first.a != second.a || first.b != second.b || first.c != second.c)
+                return true;
+            return false;
+        }
+
         public override bool Equals(object obj)
         {
             Parabola el = obj as Parabola;

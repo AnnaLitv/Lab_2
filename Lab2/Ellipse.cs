@@ -84,6 +84,20 @@ namespace Lab2
 
         }
 
+        public static bool operator ==(Ellipse first, Ellipse sec)
+        {
+            if (first.a == sec.a && first.b == sec.b)
+                return true;
+            return false;
+        }
+
+        public static bool operator !=(Ellipse first, Ellipse second)
+        {
+            if (first.a != second.a || first.b != second.b)
+                return true;
+            return false;
+        }
+
         public bool Equals(Ellipse el)
         {
             // Return true if the fields match:
