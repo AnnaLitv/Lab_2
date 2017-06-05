@@ -89,6 +89,7 @@ namespace Lab2
 
         public static Parabola operator /(Parabola first, double sec)
         {
+            if (sec == 0) throw new DivZro("Вы хотите поделить на ноль!"); 
             Parabola res = new Parabola(first.a / sec, first.b / sec, first.c / sec);
             return res;
         }
@@ -131,6 +132,14 @@ namespace Lab2
             return a.GetHashCode() ^ b.GetHashCode()^c.GetHashCode();
         }
 
+
+        public override string sum(double x)
+        {
+            Parabola hi = new Parabola(this.a, this.b, this.c);
+            Parabola hip = new Parabola();
+            hip = hi + x;
+            return "Parabola: a= " + hip.a + ", b= " + hip.b + ", c= " + hip.c;
+        }
 
     }
 }

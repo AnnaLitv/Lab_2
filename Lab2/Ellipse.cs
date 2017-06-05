@@ -133,6 +133,14 @@ namespace Lab2
             return a.GetHashCode()^ b.GetHashCode();
         }
 
-      
+
+        public override string sum(double x)
+        {
+            Ellipse hi = new Ellipse(this.a, this.b);
+            Ellipse hip = new Ellipse();
+            hip = hi + x;
+            return "Ellipse: a= " + hip.a + ", b= " + hip.b;
+        }
+
     }
 }

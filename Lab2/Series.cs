@@ -28,6 +28,14 @@ namespace Lab2
             }
         }
 
+        public void printing()
+        {
+            for (int i = 0; i < functions.Count; i++)
+            {
+                Console.WriteLine(functions[i].ToString() );
+            }
+        }
+
         public bool equal(Function el)
         {
                 for (int i = 0; i < functions.Count; i++)
@@ -43,6 +51,13 @@ namespace Lab2
                 return false;
         }
 
+        public void plus(double x)
+        {
+            for (int i = 0; i < functions.Count; i++)
+            {
+                Console.WriteLine(functions[i].ToString() + " + "+x+" = "+functions[i].sum(x));
+            }
+        }
         
         
     }

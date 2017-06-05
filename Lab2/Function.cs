@@ -42,6 +42,11 @@ namespace Lab2
         {
             return 0;
         }
-       
+
+        public virtual string sum(double x)
+        {
+            return null;
+        }
+
     }
 }

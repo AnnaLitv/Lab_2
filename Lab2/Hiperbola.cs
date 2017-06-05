@@ -130,5 +130,15 @@ namespace Lab2
             return a.GetHashCode() ^ b.GetHashCode();
         }
 
+        public override string sum(double x)
+        {
+            Hiperbola hi = new Hiperbola(this.a, this.b);
+            Hiperbola hip = new Hiperbola();
+            hip = hi + x; 
+            return "Hiperbola: a= "+hip.a+", b= "+hip.b;
+        }
+
+
+
     }
 }

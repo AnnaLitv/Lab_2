@@ -17,7 +17,7 @@ namespace Lab2
             menu();
             Console.WriteLine("Выберите пункт меню: ");
             int c = Convert.ToInt32(Console.ReadLine());
-            while (c != 5)
+            while (c != 10)
             {
                 switch (c)
                 {
@@ -118,6 +118,36 @@ namespace Lab2
                             }
                             break;
                         }
+                    case 5:
+                        {
+                            Console.WriteLine("Введите число: ");
+                            double q = Convert.ToDouble(Console.ReadLine());
+                            series.plus(q);
+                            break;
+                        }
+                    case 6:
+                        {
+                            Console.WriteLine("Введите число: ");
+                            double w = Convert.ToDouble(Console.ReadLine());
+                            break;
+                        }
+                    case 7:
+                        {
+                            Console.WriteLine("Введите число:");
+                            double r = Convert.ToDouble(Console.ReadLine());
+                            break;
+                        }
+                    case 8:
+                        {
+                            Console.WriteLine("Введите число:");
+                            double t = Convert.ToDouble(Console.ReadLine());
+                            break;
+                        }
+                    case 9:
+                        {
+                            series.printing();
+                            break;
+                        }
                     default:
                         {
                             Console.WriteLine("Такого пункта нет в меню!");
@@ -137,7 +167,12 @@ namespace Lab2
             Console.WriteLine("2. Задать уравнение");
             Console.WriteLine("3. Посчитать значение в точке х");
             Console.WriteLine("4. Проверить наличие уравнения");
-            Console.WriteLine("5. Выйти");
+            Console.WriteLine("5. Прибавить число ко всем коэффициентам");
+            Console.WriteLine("6. Отнять число от всех коэффициентов");
+            Console.WriteLine("7. Умножить коэффициенты на");
+            Console.WriteLine("8. Разделить коэфициенты на");
+            Console.WriteLine("9. Напечатать все уравнения");
+            Console.WriteLine("10. Выйти");
         }
     }
 }

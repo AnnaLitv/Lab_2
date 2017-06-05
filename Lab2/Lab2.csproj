@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DivZro.cs" />
     <Compile Include="Ellipse.cs" />
     <Compile Include="Function.cs" />
     <Compile Include="Handler.cs" />
