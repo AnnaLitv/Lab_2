@@ -11,7 +11,8 @@ namespace Lab2
         static void Main(string[] args)
         {
             Series series = new Series();
-
+            Handler hand = new Handler();
+            series.two += hand.Message;
            
             menu();
             Console.WriteLine("Выберите пункт меню: ");

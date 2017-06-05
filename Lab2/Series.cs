@@ -10,6 +10,9 @@ namespace Lab2
     {
         public List<Function> functions = new List<Function>();
 
+        public delegate void methodcont();
+        public event methodcont two;
+
         public void add(Function el)
         {
             if (el == null) return;
@@ -29,6 +32,8 @@ namespace Lab2
         {
                 for (int i = 0; i < functions.Count; i++)
                 {
+                    if (i == 1) two();
+
                     if (functions[i].Equals(el) == true)
                         {
                     Console.WriteLine(functions[i].GetHashCode() + " код равен " + el.GetHashCode());
